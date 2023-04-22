@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <form id="form">
+          <input type="text" placeholder="Search" id="search" class="search" />
+        </form>
+      </div>
+    </header>
+    <div class="container">
+      <div class="btn__open-filter">
+        <a href="/" class="filter__class-open">Open filter by genre</a>
+      </div>
+      <div class="filter__genre">
+        <a href="/" class="filter__class-close">Close filter by genre</a>
+        <div id="tags"></div>
+        <div id="myNav" class="overlay">
+          <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <!-- Overlay content -->
+          <div class="overlay-content" id="overlay-content"></div>
+
+          <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow"
+            >&#8656;</a
+          >
+
+          <a
+            href="javascript:void(0)"
+            class="arrow right-arrow"
+            id="right-arrow"
+            >&#8658;</a
+          >
+        </div>
+      </div>
+
+      <main id="main" class="main__top"></main>
+      <div class="pagination main__top">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
